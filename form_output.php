@@ -35,7 +35,7 @@ $text_without_badword = str_replace($badword, '***',$text);
     <h2 class="text-primary text-center mt-5">Testo senza badword</h2>
     <p><span class="text-decoration-underline text-primary">Contenuto del testo:</span> <?php echo $text_without_badword?></p>
     <p><span class="text-decoration-underline text-primary">Lunghezza del testo:</span> <?php echo strlen($text_without_badword)?> caratteri</p>
-    <p>La badword "<?php echo $badword?>"" è stata trovata <?php echo substr_count($text, $badword)?> volte nel testo</p>
+    <p>La badword "<?php echo $badword?>" è stata trovata <?php echo substr_count($text, $badword)?> volte nel testo</p>
 
   </div>
 </body>
