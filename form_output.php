@@ -19,21 +19,23 @@ $text_without_badword = str_replace($badword, '***',$text);
       crossorigin="anonymous"
     />
 
+     <!-- SCSS -->
+     <link rel="stylesheet" href="./style.scss" />
+
   <title>PHP Badwords</title>
 </head>
 
 <body>
- <div class="container my-5">
+  <div class="container my-5">
 
-  <h2 class="text-primary text-center">Testo completo</h2>
-  <p><span class="text-decoration-underline text-primary">Contenuto del testo:</span> <?php echo $text?></p>
-  <p><span class="text-decoration-underline text-primary">Lunghezza del testo:</span> <?php echo strlen($text)?> caratteri</p>
+    <h2 class="text-primary text-center">Testo completo</h2>
+    <p><span class="text-decoration-underline text-primary">Contenuto del testo:</span> <?php echo $text?></p>
+    <p><span class="text-decoration-underline text-primary">Lunghezza del testo:</span> <?php echo strlen($text)?> caratteri</p>
 
-  <h2 class="text-primary text-center">Testo senza badword</h2>
-  <p><span class="text-decoration-underline text-primary">Contenuto del testo:</span> <?php echo $text_without_badword?></p>
-  <p><span class="text-decoration-underline text-primary">Lunghezza del testo:</span> <?php echo strlen($text_without_badword)?> caratteri</p>
-  
+    <h2 class="text-primary text-center mt-5">Testo senza badword</h2>
+    <p><span class="text-decoration-underline text-primary">Contenuto del testo:</span> <?php echo $text_without_badword?></p>
+    <p><span class="text-decoration-underline text-primary">Lunghezza del testo:</span> <?php echo strlen($text_without_badword)?> caratteri</p>
 
- </div>
+  </div>
 </body>
 </html>
